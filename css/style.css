@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+@media (min-width: 682px) {
+  .desktop-size {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.navbar-mobile img {
+  padding: 0 20px;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+@media (min-width: 682px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+  }
+  .navbar-desktop span {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #979797;
+  }
+  .navbar-desktop span.color-text {
+    color: #3B3B3B;
+  }
+  .navbar-desktop li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 16px;
+  }
+  .navbar-desktop a {
+    text-decoration: none;
+    color: #3B3B3B;
+  }
+}
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  background: #C5C5C5;
+}
+.banner img {
+  width: 100%;
+}
+.banner .banner-text {
+  margin: auto;
+  padding: 32px 16px;
+}
+.banner .banner-text h1 {
+  color: #525252;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+.banner .banner-text p {
+  padding-bottom: 24px;
+  font-size: 24px;
+}
+.banner .banner-text a {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  color: #fff;
+  background: #979797;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+@media (min-width: 682px) {
+  .banner {
+    flex-wrap: nowrap;
+    padding: 32px 24px;
+  }
+  .banner img {
+    width: 60%;
+  }
+  .banner .banner-text {
+    padding: 32px;
+  }
+  .banner .banner-text a {
+    background: #3B3B3B;
+  }
+}
+
+.main-content {
+  padding: 16px 16px 0 16px;
+}
+.main-content .info-left {
+  display: none;
+}
+.main-content .info-right .info {
+  padding-bottom: 32px;
+}
+.main-content .info-right .info img.img-mobile {
+  display: block;
+  width: 100%;
+}
+.main-content .info-right .info img.img-desktop {
+  display: none;
+}
+.main-content .info-right .info h2, .main-content .info-right .info p, .main-content .info-right .info a {
+  padding: 0 16px;
+  line-height: 2rem;
+}
+.main-content .info-right .info h2 {
+  padding-top: 16px;
+}
+.main-content .info-right .info a {
+  text-decoration: none;
+}
+@media (min-width: 682px) {
+  .main-content {
+    display: flex;
+    padding: 32px 0 32px 24px;
+  }
+  .main-content .info-left {
+    display: block;
+    width: 60%;
+  }
+  .main-content .info-left img {
+    width: 100%;
+  }
+  .main-content .info-left h2 {
+    padding: 32px 0 24px;
+  }
+  .main-content .info-left p, .main-content .info-left span {
+    font-size: 12px;
+    color: #979797;
+  }
+  .main-content .info-left span {
+    display: block;
+    padding: 32px 0;
+  }
+  .main-content .info-right {
+    width: 40%;
+    padding-left: 24px;
+  }
+  .main-content .info-right .info {
+    display: flex;
+    align-items: center;
+  }
+  .main-content .info-right .info img.img-mobile {
+    display: none;
+  }
+  .main-content .info-right .info img.img-desktop {
+    display: block;
+    height: auto;
+    width: 35%;
+    padding-left: 16px;
+  }
+  .main-content .info-right .info .info-text {
+    width: 65%;
+  }
+  .main-content .info-right .info .info-text p, .main-content .info-right .info .info-text a {
+    font-size: 12px;
+  }
+  .main-content .info-right .info:last-child {
+    background: #C5C5C5;
+    padding-bottom: 0;
+  }
+}
+
+.main-content-two h2 {
+  text-align: center;
+  padding-top: 32px;
+}
+.main-content-two .courses {
+  padding: 16px 16px 32px 16px;
+}
+.main-content-two .courses .course-card {
+  padding-bottom: 8px;
+}
+.main-content-two .courses .course-card img {
+  display: none;
+}
+.main-content-two .courses .course-card .course-info p {
+  display: none;
+}
+.main-content-two .courses .course-card .course-info a {
+  display: block;
+  padding: 24px 16px;
+  color: #fff;
+  background: #C5C5C5;
+  text-decoration: none;
+  color: #000;
+}
+@media (min-width: 682px) {
+  .main-content-two .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 32px 72px;
+  }
+  .main-content-two .courses .course-card {
+    margin: 0 auto;
+    padding-bottom: 0;
+    width: 300px;
+  }
+  .main-content-two .courses .course-card img {
+    display: block;
+    height: auto;
+    width: 300px;
+  }
+  .main-content-two .courses .course-card .course-info {
+    background: #fff;
+    padding: 16px 16px 24px 16px;
+  }
+  .main-content-two .courses .course-card .course-info a {
+    background: none;
+    padding: 0;
+    color: #979797;
+  }
+  .main-content-two .courses .course-card .course-info p {
+    display: block;
+    padding: 8px 0;
+    color: #979797;
+    font-size: 12px;
+  }
+}
+@media (min-width: 682px) {
+  .main-content-two {
+    background: #C5C5C5;
+  }
+}
+
+.main-content-three {
+  padding: 32px 0 24px;
+}
+.main-content-three h2 {
+  text-align: center;
+  padding-bottom: 24px;
+}
+.main-content-three .video-container video {
+  width: 100%;
+}
+.main-content-three .video-container .video-about {
+  display: none;
+}
+.main-content-three .about-card {
+  display: none;
+}
+@media (min-width: 682px) {
+  .main-content-three h2 {
+    padding-bottom: 32px;
+  }
+  .main-content-three .thesis-container {
+    display: flex;
+    padding-bottom: 32px;
+  }
+  .main-content-three .video-container {
+    display: block;
+    width: 60%;
+    padding: 0 24px;
+  }
+  .main-content-three .video-container .video-about {
+    display: block;
+  }
+  .main-content-three .video-container h2 {
+    text-align: left;
+    padding: 24px 0 8px 0;
+  }
+  .main-content-three .video-container p {
+    font-size: 12px;
+    color: #979797;
+  }
+  .main-content-three .thesis {
+    width: 40%;
+  }
+  .main-content-three .thesis .about-card {
+    display: flex;
+    width: 100%;
+  }
+  .main-content-three .thesis .about-card:first-child {
+    background: #C5C5C5;
+  }
+  .main-content-three .thesis .about-card img {
+    height: auto;
+    width: 35%;
+    padding: 16px;
+  }
+  .main-content-three .thesis .about-card .thesis-about {
+    width: 65%;
+    margin: auto;
+  }
+  .main-content-three .thesis .about-card .thesis-about h2 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .main-content-three .thesis .about-card .thesis-about p {
+    font-size: 12px;
+    color: #979797;
+  }
+}
+
+footer {
+  padding: 16px 0;
+  text-align: center;
+}
+footer .footer-right {
+  display: none;
+}
+@media (min-width: 682px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    font-size: 12px;
+    border-top: 1px solid #979797;
+  }
+  footer .footer-right {
+    display: flex;
+  }
+  footer .footer-right p {
+    padding-right: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
